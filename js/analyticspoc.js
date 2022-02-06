@@ -12,16 +12,16 @@ function analyticsMain() {
     // }, 5000)
     // urlOpenedCount()
     // document.querySelectorAll("whatever").forEach(elem => elem.adEventListener("input", fn))
-    console.log(document.getElementsByTagName('a'))
+    //console.log(document.getElementsByTagName('a'))
     let url =  window.location.href
     console.log(url+" opened")
-    let elems = document.getElementsByTagName('a')
-    for(let i = 0; i<elems.length; i++){
-        elems[i].addEventListener('click', () => {
-           elementClicked()
-        });
-     }
-     urlOpenedCount()
+    //let elems = document.getElementsByTagName('a')
+    //for(let i = 0; i<elems.length; i++){
+     //   elems[i].addEventListener('click', () => {
+      //     elementClicked()
+       // });
+     //}
+     //urlOpenedCount()
 }
 
 document.addEventListener("visibilitychange", () => {
@@ -29,7 +29,7 @@ document.addEventListener("visibilitychange", () => {
 
 });
 
-window.addEventListener('load', function () {
+window.addEventListener('hashchange', function () {
     analyticsMain()
   })
 
