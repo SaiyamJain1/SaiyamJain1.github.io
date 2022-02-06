@@ -29,7 +29,7 @@ document.addEventListener("visibilitychange", () => {
 
 });
 
-window.addEventListener('hashchange', function () {
+window.addEventListener('popstate', function () {
     analyticsMain()
   })
 
